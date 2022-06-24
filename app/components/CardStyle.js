@@ -1,26 +1,23 @@
 import {StyleSheet} from 'react-native';
-import {
-  widthPercentageToDP as wp,
-  heightPercentageToDP as hp,
-} from 'react-native-responsive-screen';
-
+import {horizontalScale, verticalScale} from '../utils/Scale';
 import {COLORS} from '../constants/Theme';
 
 const styles = StyleSheet.create({
   cardImageStyle: {
-    width: wp(30),
-    height: hp(20),
+    width: verticalScale(135),
+    height: horizontalScale(190),
     borderTopLeftRadius: 5,
     borderTopRightRadius: 5,
     alignSelf: 'center',
-    margin: 8,
+    margin: 4,
   },
   titleStyle: {
     fontWeight: '300',
-    fontSize: wp(5),
+    fontSize: horizontalScale(20),
+    marginTop: verticalScale(5),
     color: COLORS.blue,
     textAlign: 'center',
-    lineHeight: hp(4),
+    lineHeight: horizontalScale(4),
   },
 });
 

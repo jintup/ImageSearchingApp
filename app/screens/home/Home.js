@@ -71,7 +71,7 @@ const Home = props => {
         onChangeText={callSearch}
       />
       <FlatList
-        numColumns={4}
+        numColumns={6 / 2}
         data={data}
         keyExtractor={item => item.id}
         renderItem={renderCard}
