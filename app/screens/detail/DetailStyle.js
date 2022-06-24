@@ -4,7 +4,7 @@ import {
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 import {COLORS} from '../../constants/Theme';
-import {FONTS} from '../../constants/Theme';
+import {Fonts} from '../../assets';
 
 const styles = StyleSheet.create({
   container: {
@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
   },
   titleStyle: {
     color: COLORS.black,
-    font: FONTS.h4,
+    font: Fonts.Semibold,
     fontSize: 20,
     marginTop: 10,
     textAlign: 'center',

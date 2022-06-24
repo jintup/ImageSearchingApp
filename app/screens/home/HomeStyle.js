@@ -4,6 +4,7 @@ import {
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 import {COLORS} from '../../constants/Theme';
+import {Fonts} from '../../assets';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -12,7 +13,7 @@ const styles = StyleSheet.create({
   input: {
     borderColor: COLORS.black,
     fontSize: 20,
-    fontWeight: 'bold',
+    fontWeight: Fonts.ExtraBold,
     paddingHorizontal: 20,
     borderWidth: 1,
     borderRadius: 12,
@@ -26,7 +27,7 @@ const styles = StyleSheet.create({
   title: {
     color: COLORS.black,
     fontSize: 30,
-    fontWeight: 'bold',
+    fontWeight: Fonts.Bold,
     textAlign: 'center',
     letterSpacing: 10,
   },
