@@ -5,10 +5,8 @@ import styles from './DetailStyle';
 
 const Detail = ({route}) => {
   const {cardData, imageUrl} = route.params;
-  const {title} = cardData;
-  const {id} = cardData;
-  const {owner} = cardData;
-  const {secret} = cardData;
+  const {title, id, owner, secret} = cardData;
+
   return (
     <ScrollView style={styles.container}>
       <FastImage
