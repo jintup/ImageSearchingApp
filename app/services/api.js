@@ -1,6 +1,6 @@
 import axios from 'axios';
 import NetInfo from '@react-native-community/netinfo';
-import api from './api_Config';
+import api from './api_config';
 import {Alert} from 'react-native';
 
 const API_BASE_URL = api.BASE_URL;
