@@ -1,11 +1,12 @@
 import React, {useState, useCallback} from 'react';
-import {View, FlatList, Text, TextInput} from 'react-native';
+import {View, FlatList, Text} from 'react-native';
 import debounce from 'lodash.debounce';
 import styles from './HomeStyle';
 import Card from '../../components/Card';
 import api from '../../services/api_Config';
 import Service from '../../services/api';
-import st from '../../components/Searchbar';
+
+import SearchBar from '../../components/Searchbar';
 const Home = props => {
   const {navigation} = props;
   // const [isLoading, setLoading] = useState(true);
@@ -62,14 +63,9 @@ const Home = props => {
   };
 
   return (
-    <View style={styles.container}>
-      <Text style={st.title}>Search Images</Text>
-      <TextInput
-        style={st.search}
-        value={searchString}
-        placeholder={'Search here..'}
-        onChangeText={callSearch}
-      />
+    <View>
+      <SearchBar callSearch={callSearch} searchString={setSearchString} />
+
       <FlatList
         numColumns={6 / 2}
         data={data}

@@ -1,18 +1,33 @@
-import {StyleSheet} from 'react-native';
-// creating Styles
+import React from 'react';
+import {View, Text, StyleSheet, TextInput} from 'react-native';
+import COLORS from '../constants/Theme';
+import {Fonts} from '../assets';
+const SearchBar = ({callSearch, searchString}) => {
+  return (
+    <View>
+      <Text style={styles.title}>Search Images</Text>
+      <TextInput
+        style={styles.search}
+        value={searchString}
+        placeholder={'Search here..'}
+        onChangeText={callSearch}
+      />
+    </View>
+  );
+};
 
-const st = StyleSheet.create({
+const styles = StyleSheet.create({
   title: {
-    color: '#000',
+    color: COLORS.COLORS.black,
     fontSize: 30,
-    fontWeight: 'bold',
+    fontWeight: Fonts.Bold,
     textAlign: 'center',
     letterSpacing: 10,
   },
   search: {
-    borderColor: '#000',
+    borderColor: COLORS.COLORS.black,
     fontSize: 20,
-    fontWeight: 'bold',
+    fontWeight: Fonts.Semibold,
     paddingHorizontal: 20,
     borderWidth: 1,
     borderRadius: 12,
@@ -20,4 +35,5 @@ const st = StyleSheet.create({
     marginVertical: 20,
   },
 });
-export default st;
+
+export default SearchBar;
