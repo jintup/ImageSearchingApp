@@ -3,7 +3,7 @@ import {View, FlatList, Text} from 'react-native';
 import debounce from 'lodash.debounce';
 import styles from '../home_screen/HomeStyle';
 import Card from '../../components/Image_card';
-import api from '../../services/api_config';
+import api from '../../services/api-config';
 import Service from '../../services/api';
 
 import SearchBar from '../../components/Searchbar';
