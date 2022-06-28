@@ -30,7 +30,7 @@ const Home = props => {
     setData(response.photos?.photo);
   };
 
-  const callSearch = text => {
+  const onChangeText = text => {
     setSearchString(text);
     searchOptimize(text);
   };
@@ -64,7 +64,7 @@ const Home = props => {
 
   return (
     <View>
-      <SearchBar callSearch={callSearch} searchString={setSearchString} />
+      <SearchBar onChangeText={onChangeText} searchString={setSearchString} />
 
       <FlatList
         numColumns={6 / 2}

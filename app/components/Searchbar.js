@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text, StyleSheet, TextInput} from 'react-native';
 import COLORS from '../constants/theme';
 import {Fonts} from '../assets';
-const SearchBar = ({callSearch, searchString}) => {
+const SearchBar = ({onChangeText, searchString}) => {
   return (
     <View>
       <Text style={styles.title}>Search Images</Text>
@@ -10,7 +10,7 @@ const SearchBar = ({callSearch, searchString}) => {
         style={styles.search}
         value={searchString}
         placeholder={'Search here..'}
-        onChangeText={callSearch}
+        onChangeText={onChangeText}
       />
     </View>
   );
