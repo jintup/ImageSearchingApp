@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
-import {horizontalScale, verticalScale} from '../utils/Scale';
-import {COLORS} from '../constants/Theme';
+import {horizontalScale, verticalScale} from '../../utils/scale';
+import {COLORS} from '../../constants/theme';
 
 const styles = StyleSheet.create({
   cardImageStyle: {

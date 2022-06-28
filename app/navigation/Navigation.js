@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Home from '../screens/homescreen/Home';
-import Detail from '../screens/detail_screen/Detail';
+import Home from '../screens/home-screen/home';
+import Detail from '../screens/detail-screen/detail';
 
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';

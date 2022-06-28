@@ -1,7 +1,7 @@
 import React from 'react';
 import {TouchableOpacity, View} from 'react-native';
 import FastImage from 'react-native-fast-image';
-import styles from './CardStyle';
+import styles from './card-style';
 
 const Card = ({onPress, url}) => {
   return (

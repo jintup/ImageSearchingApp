@@ -1,12 +1,12 @@
 import React, {useState, useCallback} from 'react';
 import {View, FlatList, Text} from 'react-native';
 import debounce from 'lodash.debounce';
-import styles from './HomeStyle';
-import Card from '../../components/Card';
-import api from '../../services/api_Config';
+import styles from './home-style';
+import Card from '../../components/card/image-card';
+import api from '../../services/api-config';
 import Service from '../../services/api';
 
-import SearchBar from '../../components/Searchbar';
+import SearchBar from '../../components/searchbar';
 const Home = props => {
   const {navigation} = props;
   // const [isLoading, setLoading] = useState(true);

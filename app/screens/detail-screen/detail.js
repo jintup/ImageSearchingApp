@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, ScrollView, Text} from 'react-native';
 import FastImage from 'react-native-fast-image';
-import styles from './DetailStyle';
+import styles from './detail-style';
 
 const Detail = ({route}) => {
   const {cardData, imageUrl} = route.params;
