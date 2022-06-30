@@ -5,7 +5,9 @@ export const COLORS = {
   lime: '#2AD699',
   lightGreen: '#E7F9EF',
   lightGreen1: '#8EbCA0',
-
+  Metalic_silver: '#CECECE',
+  lightblack: '#1c1c1c',
+  Silver: '#e5e5e5',
   white: '#fff',
   white2: '#F9F9F9',
   black: '#020202',
