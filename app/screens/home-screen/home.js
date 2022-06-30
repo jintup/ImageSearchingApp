@@ -3,8 +3,7 @@ import {View, FlatList, Text} from 'react-native';
 import debounce from 'lodash.debounce';
 import styles from './home-style';
 import Card from '../../components/card/image-card';
-import api from '../../services/api-config';
-import Service from '../../services/api';
+import {getImages} from '../../services/api/get-images/get-images';
 
 import SearchBar from '../../components/searchbar';
 const Home = props => {
@@ -14,20 +13,11 @@ const Home = props => {
   const [data, setData] = useState([]);
 
   const getData = async searchText => {
-    const apiKey = '344016064c3bf6ef267ff3bb83cedae2';
-    const requestUrl =
-      api.BASE_URL +
-      apiKey +
-      '&format=json&nojsoncallback=1&text=' +
-      searchText;
-
-    const requestedData = {
-      method: 'post',
-      url: requestUrl,
+    const queryParameters = {
+      text: searchText,
     };
-
-    const response = await Service(requestedData);
-    setData(response.photos?.photo);
+    const result = await getImages(queryParameters);
+    setData(result.photos?.photo);
   };
 
   const onChangeText = text => {

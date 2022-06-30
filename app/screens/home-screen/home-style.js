@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
   input: {
     borderColor: COLORS.black,
     fontSize: 20,
-    fontWeight: Fonts.ExtraBold,
+    fontWeight: Fonts.Semibold,
     paddingHorizontal: 20,
     borderWidth: 1,
     borderRadius: 12,
