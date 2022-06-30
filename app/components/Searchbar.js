@@ -25,11 +25,10 @@ const styles = StyleSheet.create({
     letterSpacing: 10,
   },
   search: {
-    borderColor: COLORS.COLORS.black,
+    backgroundColor: COLORS.COLORS.Silver,
     fontSize: 20,
     fontWeight: Fonts.Semibold,
     paddingHorizontal: 20,
-    borderWidth: 1,
     borderRadius: 12,
     marginHorizontal: 20,
     marginVertical: 20,
