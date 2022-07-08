@@ -13,7 +13,8 @@ export const getImages = queryParameters => {
     api_key: '3d65abfbabcb6674af04f69b7b180669',
     format: 'json',
     nojsoncallback: 1,
-    per_page: 10,
+    text: 'car',
+    per_page: 20,
   };
   const params = {...commonParams, ...queryParameters};
   const queryParams = new URLSearchParams(params).toString();
