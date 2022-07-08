@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     height: hp(70),
   },
   titleStyle: {
-    color: COLORS.black,
+    color: COLORS.darkblack,
     font: Fonts.Semibold,
     fontSize: 20,
     marginTop: 10,
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
   lowerViewStyle: {
     borderTopRightRadius: 5,
     borderTopLeftRadius: 5,
-    backgroundColor: COLORS.lightLime,
+    backgroundColor: COLORS.white,
     bottom: 10,
   },
 });
