@@ -4,16 +4,15 @@ export const COLORS = {
   lightLime: '#BBD6C5',
   lime: '#2AD699',
   lightGreen: '#E7F9EF',
-  lightGreen1: '#8EbCA0',
+
   Metalic_silver: '#CECECE',
   lightblack: '#1c1c1c',
   Silver: '#e5e5e5',
   white: '#fff',
-  white2: '#F9F9F9',
-  black: '#020202',
   blue: '#4096FE',
   gray: '#777777',
   gray2: '#F8F8F8',
+  darkblack: '#000000',
   lightGray: '#F5F6FB',
   lightGray2: '#757575',
 
