@@ -1,11 +1,13 @@
 import React, {useState, useCallback} from 'react';
-import {View, FlatList, Text} from 'react-native';
+import {View, FlatList, Text, Button, TouchableOpacity} from 'react-native';
 import debounce from 'lodash.debounce';
 import styles from './home-style';
 import Card from '../../components/card/image-card';
 import {getImages} from '../../services/api/get-images/get-images';
 
 import SearchBar from '../../components/searchbar';
+import Icon from 'react-native-vector-icons/FontAwesome';
+
 const Home = props => {
   const {navigation} = props;
   // const [isLoading, setLoading] = useState(true);
@@ -39,9 +41,7 @@ const Home = props => {
     const showDetail = () => {
       navigation.navigate('Detail', {cardData: item, imageUrl: imgUrl});
     };
-    return (
-      <Card onPress={() => showDetail(item)} url={imgUrl} title={item.title} />
-    );
+    return <Card onPress={() => showDetail(item)} url={imgUrl} />;
   };
 
   const Empty = ({item}) => {
@@ -55,6 +55,8 @@ const Home = props => {
   return (
     <View>
       <SearchBar onChangeText={onChangeText} searchString={setSearchString} />
+
+      <Icon name="list" />
 
       <FlatList
         numColumns={6 / 2}

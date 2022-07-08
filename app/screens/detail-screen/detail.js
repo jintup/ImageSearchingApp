@@ -4,8 +4,9 @@ import FastImage from 'react-native-fast-image';
 import styles from './detail-style';
 
 const Detail = ({route}) => {
-  const {cardData, imageUrl} = route.params;
-  const {title, id, owner} = cardData;
+  // const {cardData, imageUrl} = route.params;
+  const cardData = route.params?.cardData;
+  const imageUrl = route.params?.imageUrl;
 
   return (
     <ScrollView style={styles.container}>
@@ -19,9 +20,7 @@ const Detail = ({route}) => {
           allowFontScaling={false}
           numberOfLines={4}
           style={styles.titleStyle}>
-          {title}
-          {id}
-          {owner}
+          {cardData?.title ? cardData.title : 'No Title'}
         </Text>
       </View>
     </ScrollView>
