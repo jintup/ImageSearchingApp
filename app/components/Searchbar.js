@@ -18,7 +18,7 @@ const SearchBar = ({onChangeText, searchString}) => {
 
 const styles = StyleSheet.create({
   title: {
-    color: COLORS.COLORS.black,
+    color: COLORS.COLORS.darkblack,
     fontSize: 30,
     fontWeight: Fonts.Bold,
     textAlign: 'center',
